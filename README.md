@@ -1,12 +1,5 @@
 # e-waha
-## Kolaboracja: 
-- [Bartłomiej Zadrożny](https://github.com/bzadrozny)
-- [Damian Charkiewicz](https://github.com/charkied)
-- [Jakub Glinka](https://github.com/GlinkaJakub)
-- [Bartosz Michałowski](https://github.com/jaskola8)
-- [Jan Starczewski](https://github.com/jstarczewski)
-- [Karol Wójciński](https://github.com/kwojcinski)
-- [Szymon Welter](https://github.com/SzymonWelter)
+Paliwo tańsze niż myślisz!
 
 ## Krótki opis projektu:
 "Buffalo Project" jest to start-up budujący w portfolio wiele różnorodnych aplikacji przydatnych użytkownikom w codziennym życiu,
@@ -18,6 +11,15 @@ Produkt będzie składał się z 4 głównych warstw:
 - DB (dane z ML, identyfikacja)
 
 ![](https://github.com/bzadrozny/e-waha/blob/main/Architektura%20fizyczna.png)
+
+## Kolaboracja: 
+- [Bartłomiej Zadrożny](https://github.com/bzadrozny)
+- [Damian Charkiewicz](https://github.com/charkied)
+- [Jakub Glinka](https://github.com/GlinkaJakub)
+- [Bartosz Michałowski](https://github.com/jaskola8)
+- [Jan Starczewski](https://github.com/jstarczewski)
+- [Karol Wójciński](https://github.com/kwojcinski)
+- [Szymon Welter](https://github.com/SzymonWelter)
 
 ## Harmonogram:
 | Data | Oczekiwany stan prac |
