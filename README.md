@@ -48,6 +48,7 @@ Projekt e-Waha jest to jeden z pierwszych projektów, reprezentujące portfolio 
 - **Ceny paliwa stacji** - zbiór danych pozwalający na jednoznaczne określenie cen przypisanych do rodzaju paliwa **Stacji** w określonym formacie.  
 - **Mapa cen** - wizualna reprezentacja mapy regionu, zawierająca przypięte do niej dostępne **Ceny paliwa stacji** mieszczące się w danym zakresie oraz ostatnią datę aktualizacji.
 
+## Produkt finalny
 **Produkt finalny** składa się z 5 głównych warstw:
 - **Dokumentacja** 
   * Dokument wymagań
