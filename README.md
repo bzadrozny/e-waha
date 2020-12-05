@@ -72,6 +72,7 @@ Projekt e-Waha jest to jeden z pierwszych projektów, reprezentujące portfolio 
 | Dokumentacja | [Bartłomiej Zadrożny](https://github.com/bzadrozny) |
 | Aplikacja mobilna | [Jan Starczewski](https://github.com/jstarczewski), [Bartłomiej Zadrożny](https://github.com/bzadrozny) |
 | Mobile service | [Jakub Glinka](https://github.com/GlinkaJakub), [Bartosz Michałowski](https://github.com/jaskola8) |
+| DB | [Jakub Glinka](https://github.com/GlinkaJakub), [Bartosz Michałowski](https://github.com/jaskola8) |
 | ML | [Damian Charkiewicz](https://github.com/charkied), [Karol Wójciński](https://github.com/kwojcinski) |
 | DevOps | [Szymon Welter](https://github.com/SzymonWelter) |
 
