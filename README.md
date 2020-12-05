@@ -2,7 +2,7 @@
 Paliwo tańsze niż myślisz!
 
 ## Kolaboracja: 
-- [Bartłomiej Zadrożny](https://github.com/bzadrozny)
+- [Bartłomiej Zadrożny](https://github.com/bzadrozny) - lider
 - [Damian Charkiewicz](https://github.com/charkied)
 - [Jakub Glinka](https://github.com/GlinkaJakub)
 - [Bartosz Michałowski](https://github.com/jaskola8)
@@ -25,6 +25,10 @@ Projekt e-Waha opiera się na zaprojektowaniu, realizacji oraz wdrożeniu rozwi�
 | 2021-01-21 | **Produkt finalny** | 
 | 2021-01-28 | Prezentacja **Produktu finalnego** | 
 
+## Opis ogólny:
+"Buffalo Project" jest to start-up budujący w portfolio wiele różnorodnych aplikacji przydatnych użytkownikom w codziennym życiu.
+Projekt e-Waha jest to jeden z pierwszych projektów, reprezentujące portfolio Buffalo Project, a jego głównym założeniem jest w dużym skrócie wejście w potrzebę rynku znajdowania najlepszej ceny paliwa w okolicy.
+
 ## Definicje:
 - **Projekt** - pełen proces projektowo-wytwórczy rozwiązania zdefiniowanego w dokumencie wymagań oraz powiązanych artefaktach.
 - **Produkt** - niezależny wynik realizacji **Projektu** pozwalający na instalację oraz uruchomienie na określonym urządezniu oraz spełniający przypisane do niego wymagania.
@@ -44,8 +48,7 @@ Projekt e-Waha opiera się na zaprojektowaniu, realizacji oraz wdrożeniu rozwi�
 - **Ceny paliwa stacji** - zbiór danych pozwalający na jednoznaczne określenie cen przypisanych do rodzaju paliwa **Stacji** w określonym formacie.  
 - **Mapa cen** - wizualna reprezentacja mapy regionu, zawierająca przypięte do niej dostępne **Ceny paliwa stacji** mieszczące się w danym zakresie oraz ostatnią datę aktualizacji.
 
-## Opis ogólny:
-**Produkt finalny** składa się z 4 głównych warstw:
+**Produkt finalny** składa się z 5 głównych warstw:
 - **Dokumentacja** 
   * Dokument wymagań
   * Diagram przypadków użycia
@@ -61,6 +64,8 @@ Projekt e-Waha opiera się na zaprojektowaniu, realizacji oraz wdrożeniu rozwi�
   * przechowywanie i udostępniania danych z **ML**
   * przechowywanie danych **użytkowników**
 
+![architektura](https://github.com/bzadrozny/e-waha/blob/main/Architektura%20fizyczna.png)
+
 ## Podział głównych odpowiedzialności: 
 | Produkt | Zespół |
 | ------ | ------ |
@@ -69,8 +74,6 @@ Projekt e-Waha opiera się na zaprojektowaniu, realizacji oraz wdrożeniu rozwi�
 | Mobile service | [Jakub Glinka](https://github.com/GlinkaJakub), [Bartosz Michałowski](https://github.com/jaskola8) |
 | ML | [Damian Charkiewicz](https://github.com/charkied), [Karol Wójciński](https://github.com/kwojcinski) |
 | DevOps | [Szymon Welter](https://github.com/SzymonWelter) |
-
-![architektura](https://github.com/bzadrozny/e-waha/blob/main/Architektura%20fizyczna.png)
 
 ## Powiązane artefakty: 
 | Data dodania | Nazwa | link |
