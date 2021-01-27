@@ -4,6 +4,9 @@ import com.azure.storage.blob.BlobContainerClient;
 import com.azure.storage.blob.BlobServiceClient;
 import com.azure.storage.blob.BlobServiceClientBuilder;
 import com.azure.storage.blob.specialized.BlockBlobClient;
+import com.buffalo.ewaha.commons.NotAcceptableException;
+import com.buffalo.ewaha.commons.PayloadTooLargeException;
+import com.buffalo.ewaha.commons.UnprocessableEntityException;
 import com.buffalo.ewaha.controller.dto.PhotoDto;
 import com.buffalo.ewaha.model.Station;
 import com.buffalo.ewaha.repository.IStationRepository;
@@ -19,7 +22,6 @@ import org.springframework.web.client.RestTemplate;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.UUID;
 
 @Slf4j
@@ -32,8 +34,19 @@ public class PhotoService implements IPhotoService{
 
     @Override
     @Transactional
-    public void savePhoto(PhotoDto photoDto) throws IOException {
+    public void savePhoto(PhotoDto photoDto) throws IOException, UnprocessableEntityException, NotAcceptableException, PayloadTooLargeException {
         //TODO send to blobstorage
+        if (!photoDto.getLocalization().matches("^[0-9]{1,3}[.][0-9]*_[0-9]{1,3}[.][0-9]*")){
+            log.warn("Wrong localization");
+            throw new UnprocessableEntityException("Wrong localization syntax");
+        }
+        if (photoDto.getPhoto().isEmpty() || photoDto.getPhoto() == null){
+            log.warn("Request without photo file");
+            throw new NotAcceptableException("Photo Required");
+        } else if (photoDto.getPhoto().getSize() > 15000000){
+            log.warn("Request photo file is too large");
+            throw new PayloadTooLargeException("File is too large (max. 15MB)");
+        }
         Station station = stationRepository.findByLocalization(photoDto.getLocalization());
         if (station == null){
             //TODO send to blobstorage
@@ -44,7 +57,7 @@ public class PhotoService implements IPhotoService{
             log.info("saved location in db");
         }
             //TODO send to blobstorage
-        String yourSasToken = "?sv=2019-12-12&ss=b&srt=sco&sp=rwdlacx&se=2021-01-22T23:57:15Z&st=2021-01-18T15:57:15Z&spr=https,http&sig=XSV0gOkohJn6na0x%2FdNACmVwlHX80OWabyL2zZ9%2F5s0%3D";
+        String yourSasToken = "?sv=2019-12-12&ss=b&srt=sco&sp=rwdlacx&se=2021-01-30T21:49:58Z&st=2021-01-23T13:49:58Z&spr=https,http&sig=G6PXQgOe3ZHCMKUY7yeOcK7JCPrMyFahYKqEPoj9oe4%3D";
         /* Create a new BlobServiceClient with a SAS Token */
         BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
                 .endpoint("https://ewahastorage.blob.core.windows.net/blob")
