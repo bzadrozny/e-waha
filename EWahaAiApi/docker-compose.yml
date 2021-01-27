@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+    verysmartapi:
+        image: "ewahacr.azurecr.io/verysmartapi"
+    springboot-app:
+        image: "ewahacr.azurecr.io/springboot-app"
+        ports:
+            - 80:8080
+
+
+
