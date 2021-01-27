@@ -78,13 +78,12 @@ Projekt e-Waha jest to jeden z pierwszych projektów, reprezentujące portfolio 
 | DevOps | [Szymon Welter](https://github.com/SzymonWelter) |
 
 ## Powiązane artefakty: 
-| Data dodania | Nazwa | link |
-| ------ | ------ | ------ |
-| 2020-11-26 | Diagram przypadków użycia |  |
-|  | Scenariusze użycia |  |
-|  | Aplikacja mobilna |  |
-|  | Aplikacja serverowa |  |
-|  | Baza danych |  |
+| Data dodania | Nazwa |
+| ------ | ------ |
+| 2020-11-26 | Diagram przypadków użycia |
+| 2020-12-28 | Aplikacja mobilna |
+| 2020-01-04 | Aplikacja serverowa |
+| 2020-01-04 | Baza danych |
 
 ## Założenia
 **Aplikacja mobilna**:
